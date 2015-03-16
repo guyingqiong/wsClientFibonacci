@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="wsimport"> 
+    <target name="wsimport"> 
+        <exec executable="wsimport"> 
+            <arg line="-keep -s ./src -p wsClientFibonacci 
+                        -d ./bin http://localhost:9090/wsServiceFibonacci?wsdl"/> 
+        </exec> 
+    </target> 
+    
+</project> 
